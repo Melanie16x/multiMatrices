@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Multiplicación de Matrices</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Calculadora de Multiplicación de Matrices</h1>
+
+    <div class="cant">
+        <label for="filasMatriz1">Filas de la Matriz 1:</label>
+        <input type="number" id="filasMatriz1">
+    </div>
+
+    <div class="cant">
+        <label for="columnasMatriz1">Columnas de la Matriz 1:</label>
+        <input type="number" id="columnasMatriz1">
+    </div>
+
+    <div class="cant">
+        <label for="filasMatriz2">Filas de la Matriz 2:</label>
+        <input type="number" id="filasMatriz2">
+    </div>
+
+    <div class="cant">
+        <label for="columnasMatriz2">Columnas de la Matriz 2:</label>
+        <input type="number" id="columnasMatriz2">
+    </div>
+
+    <button onclick="validarYGenerarMatrices()">Continuar</button>
+
+    <div id="matricesContainer" style="margin-top: 20px;"></div>
+
+    <button onclick="multiplicarMatrices()">Multiplicar</button>
+
+    <div id="resultadoMultiplicacion" style="margin-top: 20px;"></div>
+</body>
+
+</html>
